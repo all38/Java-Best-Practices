@@ -3,7 +3,13 @@ package Central;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import ClassesMetodos.EstruturaDeClasses;
+import ClassesMetodos.MetodoComRetorno;
+import ClassesMetodos.MetodoConstrutor;
+import EstruturasDeControle.EstruturaBreak;
+import EstruturasDeControle.EstruturaContinue;
 import EstruturasDeControle.EstruturaDoWhile;
+import EstruturasDeControle.EstruturaFor;
 import EstruturasDeControle.EstruturaIF;
 import EstruturasDeControle.EstruturaIFeElse;
 import EstruturasDeControle.EstruturaIFeElseIF;
@@ -51,6 +57,14 @@ public class Program {
  		exercicios.put("Estrutura Switch", () -> EstruturaSwitch.Executar());
  		exercicios.put("Estrutura While", () -> EstruturaWhile.Executar());
  		exercicios.put("Estrutura Do While", () -> EstruturaDoWhile.Executar());
+ 		exercicios.put("Estrutura For", () -> EstruturaFor.Executar());
+ 		exercicios.put("Estrutura Break", () -> EstruturaBreak.Executar());
+ 		exercicios.put("Estrutura Continue", () -> EstruturaContinue.Executar());
+ 		
+ 		// Classes e métodos
+ 		exercicios.put("Estrutura De Classes", () -> EstruturaDeClasses.Executar());
+ 		exercicios.put("Método Construtor", () -> MetodoConstrutor.Executar());
+ 		exercicios.put("Método Com Retorno", () -> MetodoComRetorno.Executar());
  		
  		// Instancia a central e inicia a seleção
  		CentralDeExercicios central = new CentralDeExercicios(exercicios);

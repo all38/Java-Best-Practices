@@ -9,7 +9,7 @@ public class EstruturaDoWhile {
 		Scanner scanner = new Scanner(System.in);
 		String entrada;
 
-        do {
+        do { // faz enquanto atender os requesitos mas executa uma vez pelo menos 
             System.out.println("Qual o seu nome?:");
             String nome = scanner.nextLine();
 

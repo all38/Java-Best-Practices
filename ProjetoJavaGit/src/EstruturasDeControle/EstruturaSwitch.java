@@ -2,7 +2,7 @@ package EstruturasDeControle;
 
 import java.util.Scanner;
 
-public class EstruturaSwitch {
+public class EstruturaSwitch { // seleciona um valor de saida e escolhe uma execução
 
 	public static void Executar () {
 		

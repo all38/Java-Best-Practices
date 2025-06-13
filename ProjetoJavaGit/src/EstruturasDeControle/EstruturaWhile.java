@@ -18,7 +18,7 @@ public class EstruturaWhile {
 		
 		System.out.println(numeroSecreto);
 		
-		while (tentativasRestantes > 0 && !numeroEncontrado) {
+		while (tentativasRestantes > 0 && !numeroEncontrado) { // enquanto atender os requesitos continuara rodando
             System.out.print("Insira o seu palpite: ");
             String entrada = scanner.nextLine();
 
