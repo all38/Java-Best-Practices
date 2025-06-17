@@ -6,6 +6,11 @@ import java.util.Map;
 import ClassesMetodos.EstruturaDeClasses;
 import ClassesMetodos.MetodoComRetorno;
 import ClassesMetodos.MetodoConstrutor;
+import ClassesMetodos.MetodoDePropriedade;
+import ClassesMetodos.MetodoEstatico;
+import ClassesMetodos.MetodoVarargs;
+import ClassesMetodos.MetodosGettersSetters;
+import ClassesMetodos.ParametrosNomeados;
 import EstruturasDeControle.EstruturaBreak;
 import EstruturasDeControle.EstruturaContinue;
 import EstruturasDeControle.EstruturaDoWhile;
@@ -65,6 +70,11 @@ public class Program {
  		exercicios.put("Estrutura De Classes", () -> EstruturaDeClasses.Executar());
  		exercicios.put("Método Construtor", () -> MetodoConstrutor.Executar());
  		exercicios.put("Método Com Retorno", () -> MetodoComRetorno.Executar());
+ 		exercicios.put("Método Estatico", () -> MetodoEstatico.Executar());
+ 		exercicios.put("Método Varargs = params do C#", () -> MetodoVarargs.Executar());
+ 		exercicios.put("Método de Parametros Nomeados", () -> ParametrosNomeados.Executar());
+ 		exercicios.put("Método Getters e Setters", () -> MetodosGettersSetters.Executar());
+ 		exercicios.put("Método De Propriedade", () -> MetodoDePropriedade.Executar());
  		
  		// Instancia a central e inicia a seleção
  		CentralDeExercicios central = new CentralDeExercicios(exercicios);
