@@ -7,6 +7,7 @@ import ClassesMetodos.EstruturaDeClasses;
 import ClassesMetodos.MetodoComRetorno;
 import ClassesMetodos.MetodoConstrutor;
 import ClassesMetodos.MetodoDePropriedade;
+import ClassesMetodos.MetodoEnum;
 import ClassesMetodos.MetodoEstatico;
 import ClassesMetodos.MetodoVarargs;
 import ClassesMetodos.MetodosGettersSetters;
@@ -75,9 +76,11 @@ public class Program {
  		exercicios.put("Método de Parametros Nomeados", () -> ParametrosNomeados.Executar());
  		exercicios.put("Método Getters e Setters", () -> MetodosGettersSetters.Executar());
  		exercicios.put("Método De Propriedade", () -> MetodoDePropriedade.Executar());
+ 		exercicios.put("Método Enum", () -> MetodoEnum.Executar());
  		
  		// Instancia a central e inicia a seleção
  		CentralDeExercicios central = new CentralDeExercicios(exercicios);
  		central.selecionarEExecutar();
+ 		
 	}
 }
