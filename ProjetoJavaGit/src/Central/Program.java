@@ -9,6 +9,7 @@ import ClassesMetodos.MetodoConstrutor;
 import ClassesMetodos.MetodoDePropriedade;
 import ClassesMetodos.MetodoEnum;
 import ClassesMetodos.MetodoEstatico;
+import ClassesMetodos.MetodoValorVsReferencia;
 import ClassesMetodos.MetodoVarargs;
 import ClassesMetodos.MetodosGettersSetters;
 import ClassesMetodos.ParametrosNomeados;
@@ -33,6 +34,9 @@ import Fundamentos.OperadoresLogicos;
 import Fundamentos.OperadoresRelacionais;
 import Fundamentos.PrimeiroPrograma;
 import Fundamentos.VariaveisEConstantes;
+import PrincipioProgramacaoOrientadaObjetos.Heranca;
+import PrincipioProgramacaoOrientadaObjetos.InterfaceGrafica;
+import PrincipioProgramacaoOrientadaObjetos.Polimorfismo;
 
 public class Program {
 
@@ -48,7 +52,7 @@ public class Program {
  		exercicios.put("Notação Ponto", () -> NotacaoPonto.Executar());
  		exercicios.put("Lendo Dados", () -> LendoDados.Executar());
  		exercicios.put("Formatando Números", () -> FormatandoNumeros.Executar());
- 		exercicios.put("Conversões ", () -> Conversoes.Executar());
+ 		exercicios.put("Conversões", () -> Conversoes.Executar());
  		exercicios.put("Operadores Aritimeticos", () -> OperadoresAritimeticos.Executar());
  		exercicios.put("Operadores Relacionais", () -> OperadoresRelacionais.Executar());
  		exercicios.put("Operadores Logicos", () -> OperadoresLogicos.Executar());
@@ -77,6 +81,12 @@ public class Program {
  		exercicios.put("Método Getters e Setters", () -> MetodosGettersSetters.Executar());
  		exercicios.put("Método De Propriedade", () -> MetodoDePropriedade.Executar());
  		exercicios.put("Método Enum", () -> MetodoEnum.Executar());
+ 		exercicios.put("Método Valor Vs Referencia", () -> MetodoValorVsReferencia.Executar());
+ 		
+ 		// Principio de Programação orientada a objetos
+ 		exercicios.put("Herança", () -> Heranca.Executar());
+ 		exercicios.put("Polimorfismo", () -> Polimorfismo.Executar());
+ 		exercicios.put("Interface Grafica", () -> InterfaceGrafica.Executar());
  		
  		// Instancia a central e inicia a seleção
  		CentralDeExercicios central = new CentralDeExercicios(exercicios);
